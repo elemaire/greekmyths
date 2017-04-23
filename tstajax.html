@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Textarea AJAX</title>
+<script type="text/javascript">
+<!--
+function clientSideInclude(id, url) {
+  var req = false;
+  // For Safari, Firefox, and other non-MS browsers
+  if (window.XMLHttpRequest) {
+    try {
+      req = new XMLHttpRequest();
+    	} 
+	  catch (e) {
+      req = false;
+    	}
+  } 
+	else if (window.ActiveXObject) {
+    // For Internet Explorer on Windows
+    try {
+      req = new ActiveXObject("Msxml2.XMLHTTP");
+    	} 
+		catch (e) {
+      try {
+        req = new ActiveXObject("Microsoft.XMLHTTP");
+      	} 
+			catch (e) {
+        	req = false;
+      		}
+    	}
+  }
+ var element = document.getElementById(id);
+ var str = "";
+ if (!element) {
+  alert("Bad id " + id + 
+   "passed to clientSideInclude." +
+   "You need a div or span element " +
+   "with this id in your page.");
+  return;
+ }
+  if (req) {
+    // Synchronous request, wait till we have it all
+    req.open('GET', url, false);
+    req.send(null);
+    str = req.responseText;
+	str=str.replace(/\\&#39;/g,"'");
+	str=str.replace(/\\'/g,"'");
+	str=str.replace(/\\"/g,'"');
+	str=str.replace(/\\\\/g,'\\');
+	str=str.replace(/\\0/g,'\0');
+  element.innerHTML = str;
+  } else {
+    element.innerHTML =
+   " -- ";
+  }
+}
+
+// -->
+</script>
+</head>
+<body>
+<h1>Textarea AJAX Demo</h1>
+<form action="#">
+<textarea rows="3" cols="24" name="txtarea1" id="txtar1">
+This is the textarea.
+</textarea>
+</form>
+<button type="button" onclick="clientSideInclude('txtar1','Heramyth.txt');">Click Here</button>
+
+</body>
+</html>

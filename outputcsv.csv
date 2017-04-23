@@ -1,0 +1,53 @@
+Ares,Aphrodite ,0.25
+Hephaestus,Aphrodite ,0.5
+Zeus,Aphrodite ,0.25
+Athena,Ares ,0.33
+Aphrodite,Ares ,0.33
+Hephaestus,Ares ,0.33
+Zeus,Ares ,0.33
+Apollo,Artemis ,0.408
+Ares,Artemis ,0.06
+Hera,Artemis ,0.12
+Hephaestus,Artemis ,0.06
+Poseidon,Artemis ,0.12
+Zeus,Artemis ,0.58
+Hephaestus,Athena ,0.12
+Poseidon,Athena ,0.35
+Zeus,Athena ,0.93
+Hephaestus,Demeter and Persephone ,0.12
+Hermes,Demeter and Persephone ,0.17
+Hades,Demeter and Persephone ,0.998
+Zeus,Demeter and Persephone ,0.33
+Hermes,Dionysus ,0.1
+Hera,Dionysus ,0.1
+Hades,Dionysus ,0.1
+Zeus,Dionysus ,0.41
+Demeter and Persephone,Hades ,0.33
+Hermes,Hades ,0.67
+Aphrodite,Hephaestus ,0.29
+Hera,Hephaestus ,0.58
+Zeus,Hephaestus ,0.88
+Hermes,Hera ,0.27
+Zeus,Hera ,1
+Apollo,Hermes ,0.96
+Hera,Hermes ,0.09
+Hades,Hermes ,0.09
+Zeus,Hermes ,0.35
+Apollo,Poseidon ,0.27
+Artemis,Poseidon ,0.13
+Hera,Poseidon ,0.4
+Zeus,Poseidon ,0.27
+Athena,Zeus ,0.15
+Apollo,Zeus ,0.15
+Aphrodite,Zeus ,0.08
+Artemis,Zeus ,0.15
+Ares,Zeus ,0.08
+Demeter and Persephone,Zeus ,0.15
+Dionysus,Zeus ,0.15
+Hermes,Zeus ,0.08
+Hera,Zeus ,0.15
+Hephaestus,Zeus ,0.08
+Hades,Zeus ,0.15
+Hestia,Zeus ,0.15
+Poseidon,Zeus ,0.23
+None,Apollo ,0.0001

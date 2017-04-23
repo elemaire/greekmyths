@@ -1,21 +1,47 @@
 <html>
 <head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://evanplaice.github.io/jquery-csv/src/jquery.csv.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="bubblecharttest.js" defer></script>
+  <script type="text/javascript" src="drawSankey.js"></script>
   <link rel='stylesheet' type = 'text/css' href="stylesheet_myths.css">
 </head>
 <body>
-  <h1>D'AULAIRES' BOOK OF GREEK MYTHS</h1>
-  <h3> by Eric Lemaire </h3>
-    <div id="bodyleft">
-      <p>
-      This chart represents the relationships between the 12 major gods and goddesses of Mt. Olympus.<br> Here you see all the myths of these gods and the gods that are mentioned within these myths.<br> It tells a story of not only the gods and their importance, but their relationship with others.<br>
-      <br>In D'Aulaires' Book of Greek Mythology, each god is given their own myth.<br>However, often times, other gods will appear in these myths because they share a relationship or <br>affiliation. This visualization is designed to explore those relationships and see what connections <br>we can derive from these stories  and who appears with the most frequency, such as Zeus,<br> and those with less frequency, like Hestia, who doesn't have a myth at all.
-      </p>
+  <div id="container">
+    <div>
+      <h1>D'AULAIRES' BOOK OF GREEK MYTHS</h1>
+      <h3> by Eric Lemaire </h3>
     </div>
-  <div id="bodyright">
-    <img src="daulaire.jpg" alt="Greek Myths" style="width:450px;height:608px;">
+    <div>
+      <div id="bodyleft">
+        <p id="bodymain">
+        This chart represents the relationships between the 12 major gods and goddesses of Mt. Olympus.<br> Here you see all the myths of these gods and the gods that are mentioned within these myths.<br> It tells a story of not only the gods and their importance, but their relationship with others.<br>
+        <br>In D'Aulaires' Book of Greek Mythology, each god is given their own myth.<br>However, often times, other gods will appear in these myths because they share a relationship or <br>affiliation. This visualization is designed to explore those relationships and see what connections <br>we can derive from these stories  and who appears with the most frequency, such as Zeus,<br> and those with less frequency, like Hestia, who doesn't have a myth at all.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div id="bodyright">
+        <img src="daulaire.jpg" alt="Greek Myths" style="width:450px;height:608px;">
+      </div>
+    </div>
+    <div>
+      <div id="axis_headers" style="width: 900px; height: 75px;">
+        <p id="leftaxis">Gods and Goddesses</p>
+        <p id="rightaxis">Myths</p>
+      </div>
+      <div id="sankey_basic" style="width: 900px; height: 800px;">
+      </div>
+    </div>
+    <div>
+      <div id="header_div" style="width: 750px;">
+        <p id="graph_header"></p>
+      </div>
+      <textarea id="story-text" class="scrollabletextbox"></textarea>
+      <div id="bubble-chart"></div>
+    </div>
   </div>
-    <button type="button" class="button sankeybutt">
-      <a href="chart.html">Sankey Chart</a>
-    </button>
 </body>
 </html>

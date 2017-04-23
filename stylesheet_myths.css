@@ -1,125 +1,177 @@
 #sankey_basic {
-  /**border: 1px solid white;**/
-  width: 900px;
-  margin-left: auto;
+  float: left;
+  /**float: left;
+  /**width: 900px;**/
+  margin-left: 100px;
   margin-right: auto;
+  padding: 40px;
+  padding-bottom: 100px;
 }
 
+#bubble-chart {
+/*display: inline-flex;*/
+  float: right;
+  /**width: 900px;**/
+  position: relative;
+  top: -120px;
+  padding-left: 100px;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#axis_headers {
+  float: left;
+  margin-left: 140px;
+  margin-right: auto;
+  padding left: 100px;
+}
+
+#header_div {
+  width: 500px;
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 40px;
+  font-family: nunito;
+  float: right;
+}
+
+#container {
+  margin: auto;
+  width:1850px;
+  height: 2000px;
+  overflow: hidden;
+}
 
 #bodyleft {
 	background: rgba(230,230,230, .5);
-	display: inline-flex;
-	/**float: left;
-	/**width: 900px;**/
-  	margin-left: 100px;
-  	margin-right: auto;
-  	padding: 40px;
-  	padding-bottom: 100px;
+	float: left;
+  height: 465px;
+	width: 825px;
+  margin-left: 140px;
+  margin-right: auto;
+  padding: 40px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 #bodyright {
-	display: inline-flex;
+	/*display: inline-flex;*/
 	float: right;
 	/**width: 900px;**/
-  	margin-left: auto;
-  	margin-right: 200px;
+  margin-left: auto;
+  margin-right: 150px;
+}
+
+#graph_header {
+  position: relative;
+  top: -120px;
+  text-align: center;
+}
+#story-text {
+    position: relative;
+    top: -120px;
+    float:right;
+}
+
+.scrollabletextbox {
+    height:350px;
+    width:500px;
+    font-family: nunito;
+    font-size: 14;
+    overflow:scroll;
+    float:right;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 45px;
 }
 
 h1 {
-	font-family: avenir;
-  	text-align: center;
-  	color: #303030;
+	font-family: nunito;
+  font-size: 52;
+  text-align: center;
+  color: #303030;
+  margin-top: 50px;
 }
 
 h3 {
-	font-family: avenir;
-  	text-align: center;
-  	color: #303030;
+  font-size: 30;
+	font-family: nunito;
+  text-align: center;
+  color: #303030;
 }
 
-p {
-	font-family: avenir;
+#bodymain {
+	font-family: nunito;
 	font-size: 18;
 	color: #303030;
 	text-align: left;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 a {
-	font-family: avenir;
+	font-family: nunito;
 	font-size: 21;
 	text-decoration: none;
 	text-align: center;
 }
 
-.button {
-    background-color: #303030; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-   }
-.button:hover {
-    background-color: #7e7e7e; /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
+#leftaxis {
+  font-size: 30;
+  /*text-align: left;*/
+  font-family: nunito;
+  display: inline-flex;
+  float: left;
+  font-weight: bold;
 }
 
-.sankeybutt {
-	padding: 15px 32px;
-    margin-left: 450px;
-    margin-top: 50px;
-}
-
-.homebutt {
-	padding: 5px 20px;
-	margin-left: 780px;
-	width: 100px;
-	height:50px;
+#rightaxis {
+  font-size: 30;
+  /*text-align: right;*/
+  font-family: nunito;
+  display: inline-flex;
+  float: right;
+  font-weight: bold;
 }
 
 
 a:link {
     color: yellow;
-    font-family: avenir;
+    font-family: nunito;
 	text-align: center;
 }
 
 /* visited link */
 a:visited {
     color: white;
-    font-family: avenir;
+    font-family: nunito;
 	text-align: center;
 }
 
 /* mouse over link */
 a:hover {
     color: white;
-    font-family: avenir;
+    font-family: nunito;
 	text-align: center;
 }
 
 /* selected link */
 a:active {
     color: white;
-    font-family: avenir;
+    font-family: nunito;
 	text-align: center;
 }
 
 
 body {
-	background-image: url("marble.jpg");
-    background-color: #8C8C8C;
+  background-color: #fff6e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-size:     cover;                      /* <------ */*/
+/*  background-repeat:   no-repeat;
+*/  /*background-position: fill;*/
+  min-width: 300px;
 }
 
